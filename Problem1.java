@@ -1,16 +1,13 @@
 import java.util.Scanner;
-
 public class Problem1 {
     double a;
     double b;
     String operation;
-
     public Problem1(double a, double b, String operation) {
         this.a = a;
         this.b = b;
         this.operation = operation.toLowerCase();
     }
-
     public double calculate() {
         switch (operation) {
             case "addition":
@@ -31,7 +28,6 @@ public class Problem1 {
                 return Double.NaN;
         }
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter first number (a): ");
